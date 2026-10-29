@@ -8,4 +8,4 @@
 - [Structured-document example](https://github.com/inkwell-app/writing-handbook/blob/main/examples/library-workshop.md): synthetic decision and evidence exercise.
 - [Inkwell](https://www.inkwell.software/): canonical product information.
 
-Templates and examples are MIT licensed. External resources retain their own licenses. Product availability and pricing belong to the canonical website. This file is a navigation aid, not a claim about crawler support or indexing.
+Templates and examples are MIT licensed. External resources retain their own licenses. Product availability and pricing belong to the canonical website.

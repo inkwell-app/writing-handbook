@@ -18,6 +18,6 @@ The generated directory contains first-party Inkwell resources only, using canon
 
 External tools and research belong in the README's **Open tools and research** table. Name the owner, preserve the source's license attribution and use its clean URL. Every entry should help a specific writing task and resolve to a maintained destination. Avoid duplicate resources, affiliate links, keyword lists and unverified product claims.
 
-Follow the [code of conduct](CODE_OF_CONDUCT.md). Maintainers review content and policy changes through pull requests; automated checks do not establish editorial quality. A code owner must be eligible to review the author and latest pusher. We do not bypass review to make a maintenance PR mergeable.
+Follow the [code of conduct](CODE_OF_CONDUCT.md). Maintainers review contributions for useful examples, clear instructions and accurate claims.
 
 Report broken links using the issue template. Send account-specific product questions through the website’s help center. For security concerns, see `SECURITY.md`.

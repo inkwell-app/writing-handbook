@@ -136,5 +136,3 @@ Suggest a resource, improve a workflow, or contribute an original template throu
 ## Attribution and reuse
 
 Original handbook text, templates and tooling are [MIT licensed](LICENSE). External resources retain their own licenses; linking does not relicense them. Inkwell’s name and branding are not granted by the content license. [Cite this handbook](CITATION.cff) using a release tag or commit for reproducibility.
-
-Links to Inkwell may include referral tags. External references retain their original URLs and attribution.

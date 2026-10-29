@@ -1,0 +1,275 @@
+[
+  {
+    "id": "home",
+    "section": "Write with Inkwell",
+    "title": "Inkwell",
+    "url": "https://www.inkwell.software/",
+    "description": "Writing platform overview"
+  },
+  {
+    "id": "plot",
+    "section": "Write with Inkwell",
+    "title": "Plot",
+    "url": "https://www.inkwell.software/plot",
+    "description": "Screenwriting and screenplay revision"
+  },
+  {
+    "id": "canvas",
+    "section": "Write with Inkwell",
+    "title": "Canvas",
+    "url": "https://www.inkwell.software/canvas",
+    "description": "Structured documents; see the product page for current availability"
+  },
+  {
+    "id": "features",
+    "section": "Write with Inkwell",
+    "title": "Features",
+    "url": "https://www.inkwell.software/features",
+    "description": "Explore writing, history, AI and collaboration"
+  },
+  {
+    "id": "pricing",
+    "section": "Write with Inkwell",
+    "title": "Plans and pricing",
+    "url": "https://www.inkwell.software/pricing",
+    "description": "Current plans and entitlements"
+  },
+  {
+    "id": "signup",
+    "section": "Write with Inkwell",
+    "title": "Start writing",
+    "url": "https://app.inkwell.software/signup",
+    "description": "Create an account"
+  },
+  {
+    "id": "screenwriters",
+    "section": "Find your workflow",
+    "title": "Screenwriters",
+    "url": "https://www.inkwell.software/for/screenwriters",
+    "description": "Draft and revise a screenplay"
+  },
+  {
+    "id": "writers_room",
+    "section": "Find your workflow",
+    "title": "Writers’ rooms",
+    "url": "https://www.inkwell.software/for/writers-room",
+    "description": "Collaborate on scripts"
+  },
+  {
+    "id": "showrunners",
+    "section": "Find your workflow",
+    "title": "Showrunners",
+    "url": "https://www.inkwell.software/for/showrunners",
+    "description": "Keep a season coherent"
+  },
+  {
+    "id": "novelists",
+    "section": "Find your workflow",
+    "title": "Novelists",
+    "url": "https://www.inkwell.software/for/novelists",
+    "description": "Organize long-form prose"
+  },
+  {
+    "id": "researchers",
+    "section": "Find your workflow",
+    "title": "Researchers",
+    "url": "https://www.inkwell.software/for/researchers",
+    "description": "Develop research documents"
+  },
+  {
+    "id": "teams",
+    "section": "Find your workflow",
+    "title": "Teams",
+    "url": "https://www.inkwell.software/for/teams",
+    "description": "Review shared documents"
+  },
+  {
+    "id": "education",
+    "section": "Find your workflow",
+    "title": "Students and educators",
+    "url": "https://www.inkwell.software/for/education",
+    "description": "Teach and practice writing"
+  },
+  {
+    "id": "fdx_inspector",
+    "section": "Use a free writing tool",
+    "title": "FDX Inspector",
+    "url": "https://www.inkwell.software/tools/fdx-inspector",
+    "description": "Inspect a Final Draft file before a handoff"
+  },
+  {
+    "id": "fountain_validator",
+    "section": "Use a free writing tool",
+    "title": "Fountain validator",
+    "url": "https://www.inkwell.software/tools/fountain-validator",
+    "description": "Check screenplay structure"
+  },
+  {
+    "id": "screenplay_diff",
+    "section": "Use a free writing tool",
+    "title": "Screenplay Diff",
+    "url": "https://www.inkwell.software/tools/screenplay-diff",
+    "description": "Compare two drafts"
+  },
+  {
+    "id": "script_breakdown",
+    "section": "Use a free writing tool",
+    "title": "Script breakdown",
+    "url": "https://www.inkwell.software/tools/script-breakdown",
+    "description": "Prepare a scene inventory"
+  },
+  {
+    "id": "dialogue_balance",
+    "section": "Use a free writing tool",
+    "title": "Dialogue balance",
+    "url": "https://www.inkwell.software/tools/dialogue-balance",
+    "description": "Explore who speaks"
+  },
+  {
+    "id": "tools",
+    "section": "Use a free writing tool",
+    "title": "All tools",
+    "url": "https://www.inkwell.software/tools",
+    "description": "Browse the complete tool catalog"
+  },
+  {
+    "id": "resources",
+    "section": "Learn and explore",
+    "title": "Resources",
+    "url": "https://www.inkwell.software/resources",
+    "description": "Guides and interactive references"
+  },
+  {
+    "id": "templates",
+    "section": "Learn and explore",
+    "title": "Templates",
+    "url": "https://www.inkwell.software/templates",
+    "description": "Screenplay and TV starting points"
+  },
+  {
+    "id": "blog",
+    "section": "Learn and explore",
+    "title": "Writing and product blog",
+    "url": "https://www.inkwell.software/blog",
+    "description": "Practical writing and revision articles"
+  },
+  {
+    "id": "glossary",
+    "section": "Learn and explore",
+    "title": "Screenwriting glossary",
+    "url": "https://www.inkwell.software/glossary",
+    "description": "Look up a term"
+  },
+  {
+    "id": "interop",
+    "section": "Learn and explore",
+    "title": "Interoperability guide",
+    "url": "https://www.inkwell.software/resources/interop",
+    "description": "Understand Fountain and FDX handoffs"
+  },
+  {
+    "id": "import",
+    "section": "Learn and explore",
+    "title": "Import an FDX file",
+    "url": "https://www.inkwell.software/resources/guides/import-fdx",
+    "description": "Prepare a Final Draft import"
+  },
+  {
+    "id": "anatomy",
+    "section": "Learn and explore",
+    "title": "Screenplay Anatomy Atlas",
+    "url": "https://www.inkwell.software/resources/screenplay-anatomy",
+    "description": "Explore screenplay structure"
+  },
+  {
+    "id": "scene_order",
+    "section": "Learn and explore",
+    "title": "Scene Order Lab",
+    "url": "https://www.inkwell.software/resources/scene-order-lab",
+    "description": "Practice scene continuity"
+  },
+  {
+    "id": "dialogue",
+    "section": "Learn and explore",
+    "title": "Screenplay dialogue research",
+    "url": "https://www.inkwell.software/resources/screenplay-dialogue",
+    "description": "Explore the measurements and their methods"
+  },
+  {
+    "id": "help",
+    "section": "Get help and follow the product",
+    "title": "Help center",
+    "url": "https://www.inkwell.software/help",
+    "description": "Product instructions"
+  },
+  {
+    "id": "changelog",
+    "section": "Get help and follow the product",
+    "title": "Changelog",
+    "url": "https://www.inkwell.software/changelog",
+    "description": "Recent product changes"
+  },
+  {
+    "id": "compare",
+    "section": "Get help and follow the product",
+    "title": "Compare writing tools",
+    "url": "https://www.inkwell.software/compare",
+    "description": "Evaluate your options"
+  },
+  {
+    "id": "security",
+    "section": "Get help and follow the product",
+    "title": "Security",
+    "url": "https://www.inkwell.software/security",
+    "description": "Security information"
+  },
+  {
+    "id": "contact",
+    "section": "Get help and follow the product",
+    "title": "Contact",
+    "url": "https://www.inkwell.software/contact",
+    "description": "Reach the Inkwell team"
+  },
+  {
+    "id": "about",
+    "section": "Get help and follow the product",
+    "title": "About Inkwell",
+    "url": "https://www.inkwell.software/about",
+    "description": "Learn about the team"
+  },
+  {
+    "id": "de",
+    "section": "Read in your language",
+    "title": "Resources — Deutsch",
+    "url": "https://www.inkwell.software/de/resources",
+    "description": "Published localized resource hub"
+  },
+  {
+    "id": "es",
+    "section": "Read in your language",
+    "title": "Resources — Español",
+    "url": "https://www.inkwell.software/es/resources",
+    "description": "Published localized resource hub"
+  },
+  {
+    "id": "fr",
+    "section": "Read in your language",
+    "title": "Resources — Français",
+    "url": "https://www.inkwell.software/fr/resources",
+    "description": "Published localized resource hub"
+  },
+  {
+    "id": "ja",
+    "section": "Read in your language",
+    "title": "Resources — 日本語",
+    "url": "https://www.inkwell.software/ja/resources",
+    "description": "Published localized resource hub"
+  },
+  {
+    "id": "ko",
+    "section": "Read in your language",
+    "title": "Resources — 한국어",
+    "url": "https://www.inkwell.software/ko/resources",
+    "description": "Published localized resource hub"
+  }
+]

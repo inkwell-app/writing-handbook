@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+<title id="title">Inkwell Writing Handbook</title>
+<desc id="desc">Make the next draft clearer. Workflows, templates, and revision exercises for screenplays and structured documents.</desc>
+<rect width="1280" height="640" fill="#0c1222"/>
+<path d="M860 0H1280V640H1050Z" fill="#17213b"/>
+<rect x="72" y="66" width="42" height="6" rx="3" fill="#a5b4fc"/>
+<text x="72" y="116" font-family="Arial, sans-serif" font-size="24" letter-spacing="4" fill="#c7d2fe">INKWELL / FIELD GUIDES</text>
+<text x="66" y="233" font-family="Georgia, serif" font-size="76" fill="#f8fafc">Make the next</text>
+<text x="66" y="325" font-family="Georgia, serif" font-size="76" fill="#f8fafc">draft clearer.</text>
+<text x="72" y="395" font-family="Arial, sans-serif" font-size="27" fill="#cbd5e1">The Writing Handbook</text>
+<line x1="72" x2="796" y1="450" y2="450" stroke="#37445f"/>
+<text x="72" y="504" font-family="Arial, sans-serif" font-size="21" fill="#a5b4fc">PLAN</text>
+<text x="230" y="504" font-family="Arial, sans-serif" font-size="21" fill="#a5b4fc">REVISE</text>
+<text x="410" y="504" font-family="Arial, sans-serif" font-size="21" fill="#a5b4fc">VERIFY</text>
+<text x="590" y="504" font-family="Arial, sans-serif" font-size="21" fill="#a5b4fc">HAND OFF</text>
+<text x="72" y="576" font-family="Arial, sans-serif" font-size="19" fill="#94a3b8">Screenplays · Research · Shared documents</text>
+<rect x="934" y="170" width="232" height="306" rx="8" fill="#e2e8f0" transform="rotate(7 1050 320)"/>
+<rect x="903" y="148" width="232" height="306" rx="8" fill="#f8fafc"/>
+<path d="M936 198H1102M936 230H1102M936 262H1060M936 326H1102M936 358H1074" stroke="#94a3b8" stroke-width="8"/>
+<path d="M932 290H1095" stroke="#6366f1" stroke-width="10"/>
+<path d="m1012 402 16 16 40-43" stroke="#4f46e5" stroke-width="8" fill="none"/>
+</svg>

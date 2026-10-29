@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the release or commit you used."
+title: "Inkwell Writing Handbook"
+type: software
+abstract: "Original practical writing workflows, reusable templates, and worked revision exercises for screenplays and structured documents."
+keywords:
+  - writing
+  - screenwriting
+  - revision
+  - templates
+  - structured documents
+authors:
+  - name: "Inkwell"
+    website: "https://www.inkwell.software/"
+repository-code: "https://github.com/inkwell-app/writing-handbook"
+license: MIT
+version: 1.0.0

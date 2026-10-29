@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Product help
+    url: https://www.inkwell.software/help?utm_source=github&utm_medium=referral&utm_campaign=writing_handbook&utm_id=github_writing_handbook&utm_source_platform=github&utm_content=issue_chooser_help
+    about: Get help with an Inkwell account or product workflow.
+  - name: Security reporting
+    url: https://www.inkwell.software/security
+    about: Report security concerns privately.

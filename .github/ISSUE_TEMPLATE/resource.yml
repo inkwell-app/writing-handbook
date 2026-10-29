@@ -1,0 +1,17 @@
+name: Resource or workflow correction
+description: Report a broken link, unclear step, or original resource suggestion.
+labels: [resource]
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Page or resource
+      description: Include the public path or URL. Do not include private drafts or account data.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Suggested correction and evidence
+    validations:
+      required: true

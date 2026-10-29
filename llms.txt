@@ -1,0 +1,11 @@
+# Inkwell Writing Handbook
+
+> Original reusable writing workflows and templates maintained by Inkwell.
+
+- [Start here](https://github.com/inkwell-app/writing-handbook/blob/main/README.md): purpose, task paths and the resource directory.
+- [Template selection](https://github.com/inkwell-app/writing-handbook/blob/main/docs/choose-a-template.md): choose the smallest useful artifact.
+- [Screenplay example](https://github.com/inkwell-app/writing-handbook/blob/main/examples/the-last-light.md): original fictional revision exercise.
+- [Structured-document example](https://github.com/inkwell-app/writing-handbook/blob/main/examples/library-workshop.md): synthetic decision and evidence exercise.
+- [Inkwell](https://www.inkwell.software/): canonical product information.
+
+Templates and examples are MIT licensed. External resources retain their own licenses. Product availability and pricing belong to the canonical website. This file is a navigation aid, not a claim about crawler support or indexing.

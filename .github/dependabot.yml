@@ -1,16 +1,38 @@
+# One monthly version-update PR across packages and GitHub Actions.
+# Security fixes bypass the schedule/cooldown and are grouped per ecosystem.
 version: 2
+
+multi-ecosystem-groups:
+  dependencies:
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 1
+    commit-message:
+      prefix: chore(deps)
+    labels:
+      - dependencies
+
 updates:
   - package-ecosystem: npm
     directory: /
-    schedule:
-      interval: monthly
+    patterns: ["*"]
+    multi-ecosystem-group: dependencies
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 7
+      semver-patch-days: 3
     groups:
-      maintenance:
-        patterns: ['*']
+      npm-security:
+        applies-to: security-updates
+        patterns: ["*"]
   - package-ecosystem: github-actions
     directory: /
-    schedule:
-      interval: monthly
+    patterns: ["*"]
+    multi-ecosystem-group: dependencies
+    cooldown:
+      default-days: 7
     groups:
-      actions:
-        patterns: ['*']
+      actions-security:
+        applies-to: security-updates
+        patterns: ["*"]

@@ -49,7 +49,7 @@ export function parseResources(value: unknown): Resource[] {
       throw new Error(`Resource ${index + 1}: invalid or duplicate id ${resource.id}`)
     seen.add(resource.id)
     for (const field of [resource.title, resource.section, resource.description])
-      if (/[\n\r|<>\[\]`]/.test(field))
+      if (/[\n\r|<>\[\]`"]/.test(field))
         throw new Error(`Resource ${resource.id}: unsafe Markdown text`)
     const url = new URL(resource.url)
     tagged(resource.url, resource.id)
@@ -75,18 +75,112 @@ export function replaceBlock(text: string, name: string, body: string): string {
     text.slice(text.indexOf(end))
   )
 }
-export function directory(resources: Resource[]): string {
-  const sections = new Map<string, string[]>()
-  for (const row of resources) {
-    const lines = sections.get(row.section) ?? []
-    lines.push(`| [${row.title}](${tagged(row.url, `directory_${row.id}`)}) | ${row.description} |`)
-    sections.set(row.section, lines)
-  }
-  return [...sections]
-    .map(
-      ([name, rows]) => `### ${name}\n\n| Resource | Use it for |\n|---|---|\n${rows.join("\n")}`,
-    )
-    .join("\n\n")
+export interface SectionGroup {
+  name: string
+  ids: string[]
+}
+/**
+ * How one directory section reads. `table` lists each resource with what it is
+ * for. With `groups`, a long section becomes one row per job or form, its
+ * resources on one line, so twenty tools scan as five rows; `groupLabel` and
+ * `itemLabel` head the two columns. `links` is one line of names, for sections
+ * whose titles say everything (terms, languages, apps to switch from). Where a
+ * description is not shown, it is the link's hover title.
+ */
+export interface Section {
+  name: string
+  intro: string
+  layout: "table" | "links"
+  groupLabel?: string
+  itemLabel?: string
+  groups?: SectionGroup[]
+}
+function safeText(value: unknown, label: string): string {
+  if (typeof value !== "string" || !value.trim()) throw new Error(`${label}: missing text`)
+  if (/[\n\r|<>\[\]`*_]/.test(value)) throw new Error(`${label}: unsafe Markdown text`)
+  return value
+}
+/**
+ * Sections in reading order. Every resource's section is listed once, every
+ * listed section has resources, and a grouped section places each of its
+ * resources in exactly one group, so nothing can drop out of the directory.
+ */
+export function parseSections(value: unknown, resources: Resource[]): Section[] {
+  if (!Array.isArray(value) || !value.length) throw new Error("Sections must be a nonempty array")
+  const names = new Set<string>()
+  const sections = value.map((item: unknown, index): Section => {
+    if (!item || typeof item !== "object" || Array.isArray(item))
+      throw new Error(`Section ${index + 1}: expected object`)
+    const row = item as Record<string, unknown>
+    const name = safeText(row.name, `Section ${index + 1} name`)
+    if (names.has(name)) throw new Error(`Section ${name}: listed twice`)
+    names.add(name)
+    const intro = safeText(row.intro, `Section ${name} intro`)
+    if (row.layout !== "table" && row.layout !== "links")
+      throw new Error(`Section ${name}: layout must be table or links`)
+    const members = resources.filter((resource) => resource.section === name).map((r) => r.id)
+    if (!members.length) throw new Error(`Section ${name}: no resources`)
+    if (row.groups === undefined) return { name, intro, layout: row.layout }
+    if (row.layout !== "table") throw new Error(`Section ${name}: only a table can be grouped`)
+    const groupLabel = safeText(row.groupLabel, `Section ${name} groupLabel`)
+    const itemLabel = safeText(row.itemLabel, `Section ${name} itemLabel`)
+    if (!Array.isArray(row.groups) || !row.groups.length)
+      throw new Error(`Section ${name}: groups must be a nonempty array`)
+    const placed = new Set<string>()
+    const groups = row.groups.map((group: unknown, position): SectionGroup => {
+      if (!group || typeof group !== "object" || Array.isArray(group))
+        throw new Error(`Section ${name} group ${position + 1}: expected object`)
+      const entry = group as Record<string, unknown>
+      const groupName = safeText(entry.name, `Section ${name} group ${position + 1}`)
+      if (!Array.isArray(entry.ids) || !entry.ids.length)
+        throw new Error(`Section ${name} group ${groupName}: ids must be a nonempty array`)
+      const ids = entry.ids.map((id: unknown) => {
+        if (typeof id !== "string" || !members.includes(id))
+          throw new Error(
+            `Section ${name} group ${groupName}: ${String(id)} is not in this section`,
+          )
+        if (placed.has(id)) throw new Error(`Section ${name}: ${id} is in two groups`)
+        placed.add(id)
+        return id
+      })
+      return { name: groupName, ids }
+    })
+    const missing = members.filter((id) => !placed.has(id))
+    if (missing.length) throw new Error(`Section ${name}: ungrouped ${missing.join(", ")}`)
+    return { name, intro, layout: row.layout, groupLabel, itemLabel, groups }
+  })
+  const unlisted = [...new Set(resources.map((r) => r.section))].filter((s) => !names.has(s))
+  if (unlisted.length)
+    throw new Error(`Sections missing from sections.json: ${unlisted.join(", ")}`)
+  return sections
+}
+export function directory(resources: Resource[], sections: Section[]): string {
+  const byId = new Map(resources.map((row) => [row.id, row]))
+  const link = (row: Resource) => `[${row.title}](${tagged(row.url, `directory_${row.id}`)})`
+  // The description becomes the hover title where the layout does not show it.
+  const titled = (row: Resource) =>
+    `[${row.title}](${tagged(row.url, `directory_${row.id}`)} "${row.description}")`
+  const slugger = new GithubSlugger()
+  const jump = sections.map((section) => `[${section.name}](#${slugger.slug(section.name)})`)
+  const body = sections.map((section) => {
+    const rows = resources.filter((row) => row.section === section.name)
+    let content: string
+    if (section.layout === "links") content = rows.map(titled).join(" · ")
+    else if (section.groups) {
+      const lines = section.groups.map((group) => {
+        const links = group.ids.map((id) => {
+          const row = byId.get(id)
+          if (!row) throw new Error(`Unknown resource ${id}`)
+          return titled(row)
+        })
+        return `| **${group.name}** | ${links.join(" · ")} |`
+      })
+      content = `| ${section.groupLabel} | ${section.itemLabel} |\n|---|---|\n${lines.join("\n")}`
+    } else
+      content = `| Resource | Use it for |\n|---|---|\n${rows.map((row) => `| ${link(row)} | ${row.description} |`).join("\n")}`
+    return `### ${section.name}\n\n${section.intro}\n\n${content}`
+  })
+  return [`**Jump to:** ${jump.join(" · ")}`, ...body].join("\n\n")
 }
 const placements: Record<string, readonly string[]> = {
   "plan-a-draft": ["plot", "canvas"],
@@ -98,9 +192,16 @@ export function generate(root: string, write = false): void {
   const resources = parseResources(
     JSON.parse(readFileSync(resolve(root, "resources.json"), "utf8")),
   )
+  const sections = parseSections(
+    JSON.parse(readFileSync(resolve(root, "sections.json"), "utf8")),
+    resources,
+  )
   const outputs = new Map<string, string>()
   const readme = resolve(root, "README.md")
-  outputs.set(readme, replaceBlock(readFileSync(readme, "utf8"), "resources", directory(resources)))
+  outputs.set(
+    readme,
+    replaceBlock(readFileSync(readme, "utf8"), "resources", directory(resources, sections)),
+  )
   for (const [workflow, ids] of Object.entries(placements)) {
     const links = ids.map((id) => {
       const row = resources.find((row) => row.id === id)

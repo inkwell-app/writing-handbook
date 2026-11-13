@@ -3,7 +3,7 @@
 Contribute original, practical workflows, templates, examples or verified resource corrections. Explain who the change helps and how you checked it. Keep product availability and pricing on the canonical product pages instead of duplicating details that will become stale.
 
 1. Fork the repository and create a branch.
-2. Edit the relevant Markdown or `resources.json`. Never edit the generated directory inside README directly.
+2. Edit the relevant Markdown, `resources.json` or `sections.json`. Never edit the generated directory inside README directly. `sections.json` sets the directory's reading order, each section's one-line introduction and its layout: a table, a table grouped by job or form, or a single line of links for sections whose names say enough. A new resource in a grouped section goes into one of its groups; the check fails until it does.
 3. Use Node 22.18+ and pnpm 10.20.0. Run `pnpm install --frozen-lockfile --ignore-scripts`, `pnpm generate`, `pnpm typecheck`, and `pnpm test`. These commands also validate workflow links and local heading anchors. Tooling is TypeScript; readers need no runtime to copy the templates.
 4. Check external destinations with `pnpm links`. Markdown, `llms.txt`, issue-template YAML and citation metadata are included. Same-repository blob links are checked locally; after publication, `pnpm links --published` also checks them on GitHub. Report temporary failures honestly; do not remove useful sources solely because they rate-limit a checker.
 5. Open a pull request explaining the reader’s task, provenance and verification.

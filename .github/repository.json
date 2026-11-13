@@ -1,7 +1,7 @@
 {
   "settings": {
     "description": "Practical writing workflows, reusable templates, and resources for screenplays and structured documents.",
-    "homepage": "https://www.inkwell.software/resources",
+    "homepage": "https://www.inkwell.software/resources?utm_source=github&utm_medium=referral&utm_campaign=writing_handbook&utm_id=github_writing_handbook&utm_source_platform=github&utm_content=repository_homepage",
     "default_branch": "main",
     "has_issues": true,
     "has_wiki": false,
@@ -20,11 +20,12 @@
     "writing",
     "screenwriting",
     "creative-writing",
-    "writing-workflows",
+    "writing-workflow",
     "templates",
     "revision",
     "research",
     "documentation",
-    "inkwell"
+    "inkwell",
+    "screenplay"
   ]
 }

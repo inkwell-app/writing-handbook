@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Use a free writing tool",
+    "intro": "Free tools, grouped by the job in front of you.",
+    "layout": "table",
+    "groupLabel": "Job",
+    "itemLabel": "Tools",
+    "groups": [
+      {
+        "name": "Check a file",
+        "ids": [
+          "fdx_inspector",
+          "fountain_validator",
+          "screenplay_converter",
+          "screenplay_length",
+          "markdown_to_word"
+        ]
+      },
+      {
+        "name": "Read a draft",
+        "ids": [
+          "screenplay_diff",
+          "screenplay_analyzer",
+          "dialogue_balance",
+          "pacing_map",
+          "outline_extractor"
+        ]
+      },
+      {
+        "name": "Plan the story",
+        "ids": [
+          "beat_sheet_calculator",
+          "character_profile_tool",
+          "character_names",
+          "writing_goal_planner"
+        ]
+      },
+      {
+        "name": "Prepare to shoot or submit",
+        "ids": [
+          "script_breakdown",
+          "table_read_planner",
+          "rehearsal_sides",
+          "title_page_builder",
+          "wga_minimums",
+          "representation_planner"
+        ]
+      },
+      { "name": "Everything else", "ids": ["tools"] }
+    ]
+  },
+  {
+    "name": "Start from a template",
+    "intro": "Starting points on the Inkwell site, grouped by form.",
+    "layout": "table",
+    "groupLabel": "Form",
+    "itemLabel": "Templates",
+    "groups": [
+      { "name": "Feature", "ids": ["tpl_beat_sheet", "tpl_act_two", "tpl_rewrite_plan"] },
+      { "name": "Television", "ids": ["tpl_pilot", "tpl_series_bible"] },
+      { "name": "Short film", "ids": ["tpl_short"] },
+      { "name": "Notes and coverage", "ids": ["tpl_coverage", "tpl_table_read"] },
+      { "name": "Any script", "ids": ["tpl_google_docs"] },
+      { "name": "Novel", "ids": ["tpl_novel_outline"] }
+    ]
+  },
+  {
+    "name": "Learn the craft",
+    "intro": "Guides from a first idea to a finished, formatted draft.",
+    "layout": "table"
+  },
+  {
+    "name": "Run an AI pass",
+    "intro": "Focused revision passes you can run on a draft in Inkwell.",
+    "layout": "table"
+  },
+  {
+    "name": "Look up a term",
+    "intro": "Short definitions from the screenwriting glossary.",
+    "layout": "links"
+  },
+  {
+    "name": "Switch from another app",
+    "intro": "Guides for bringing your scripts across from the app you use now.",
+    "layout": "links"
+  },
+  {
+    "name": "Learn and explore",
+    "intro": "Interactive references, research and the blog.",
+    "layout": "table"
+  },
+  {
+    "name": "Find your workflow",
+    "intro": "How Inkwell fits the way you already work.",
+    "layout": "table"
+  },
+  {
+    "name": "Write with Inkwell",
+    "intro": "The products, the plans and a place to start.",
+    "layout": "table"
+  },
+  {
+    "name": "Get help and follow the product",
+    "intro": "Instructions, recent changes and ways to reach the team.",
+    "layout": "links"
+  },
+  {
+    "name": "Read in your language",
+    "intro": "The resource hub in five more languages.",
+    "layout": "links"
+  }
+]

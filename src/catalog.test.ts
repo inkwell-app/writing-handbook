@@ -7,10 +7,12 @@ import { fileURLToPath } from "node:url"
 import {
   checkLocal,
   checkUrl,
+  directory,
   externalUrls,
   generate,
   navigation,
   parseResources,
+  parseSections,
   replaceBlock,
   tagged,
 } from "./catalog.ts"
@@ -175,7 +177,7 @@ test("generation detects stale output and validates every target before writing"
   const root = mkdtempSync(join(tmpdir(), "handbook-generation-"))
   const source = resolve(dirname(fileURLToPath(import.meta.url)), "..")
   try {
-    for (const name of ["README.md", "resources.json", "workflows"])
+    for (const name of ["README.md", "resources.json", "sections.json", "workflows"])
       cpSync(join(source, name), join(root, name), { recursive: true })
     generate(root)
     const readme = join(root, "README.md")
@@ -196,4 +198,55 @@ test("generation detects stale output and validates every target before writing"
   } finally {
     rmSync(root, { recursive: true, force: true })
   }
+})
+
+test("sections place every resource once and render groups as named rows", () => {
+  const resources = parseResources([
+    { ...row, id: "a", section: "Tools" },
+    { ...row, id: "b", section: "Tools" },
+    { ...row, id: "c", section: "Terms", title: "Fountain" },
+  ])
+  const valid = [
+    {
+      name: "Tools",
+      intro: "Free tools.",
+      layout: "table",
+      groupLabel: "Job",
+      itemLabel: "Tools",
+      groups: [{ name: "Check a file", ids: ["b", "a"] }],
+    },
+    { name: "Terms", intro: "Definitions.", layout: "links" },
+  ]
+  const sections = parseSections(valid, resources)
+  const output = directory(resources, sections)
+  assert.match(output, /^\*\*Jump to:\*\* \[Tools\]\(#tools\) · \[Terms\]\(#terms\)/)
+  // A group is one row, its resources in the group's own order with their
+  // descriptions as hover titles.
+  assert.match(
+    output,
+    /\| Job \| Tools \|\n\|---\|---\|\n\| \*\*Check a file\*\* \| \[Example\]\([^)]*directory_b "Example"\) · \[Example\]\([^)]*directory_a "Example"\) \|/,
+  )
+  assert.match(output, /### Terms\n\nDefinitions\.\n\n\[Fountain\]\([^)]*directory_c "Example"\)$/)
+  assert.equal(navigation(output).links.length, 5)
+  // A quote would end the hover title early.
+  assert.throws(
+    () => parseResources([{ ...row, description: 'The "best" tool' }]),
+    /unsafe Markdown text/,
+  )
+  const tools = valid[0] ?? assert.fail()
+  for (const [broken, message] of [
+    [[tools], /missing from sections.json: Terms/],
+    [[...valid, { name: "Empty", intro: "None.", layout: "table" }], /Empty: no resources/],
+    [[{ ...tools, groups: [{ name: "One", ids: ["a"] }] }, valid[1]], /ungrouped b/],
+    [[{ ...tools, groups: [{ name: "One", ids: ["a", "b", "a"] }] }, valid[1]], /in two groups/],
+    [
+      [{ ...tools, groups: [{ name: "One", ids: ["a", "b", "c"] }] }, valid[1]],
+      /c is not in this section/,
+    ],
+    [[{ ...tools, layout: "links" }, valid[1]], /only a table can be grouped/],
+    [[{ ...tools, intro: "Use **bold**" }, valid[1]], /unsafe Markdown/],
+    [[{ ...tools, itemLabel: undefined }, valid[1]], /itemLabel: missing text/],
+    [[tools, tools, valid[1]], /listed twice/],
+  ] as const)
+    assert.throws(() => parseSections(broken, resources), message)
 })

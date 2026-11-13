@@ -126,11 +126,347 @@
     "description": "Explore who speaks"
   },
   {
+    "id": "screenplay_converter",
+    "section": "Use a free writing tool",
+    "title": "Screenplay converter",
+    "url": "https://www.inkwell.software/tools/screenplay-converter",
+    "description": "View an FDX file, export it to PDF, or turn a PDF into Fountain"
+  },
+  {
+    "id": "screenplay_analyzer",
+    "section": "Use a free writing tool",
+    "title": "Screenplay analyzer",
+    "url": "https://www.inkwell.software/tools/screenplay-analyzer",
+    "description": "Count scenes, characters and dialogue in a draft"
+  },
+  {
+    "id": "pacing_map",
+    "section": "Use a free writing tool",
+    "title": "Pacing map",
+    "url": "https://www.inkwell.software/tools/pacing-map",
+    "description": "See where scenes run long or short"
+  },
+  {
+    "id": "screenplay_length",
+    "section": "Use a free writing tool",
+    "title": "Screenplay length checker",
+    "url": "https://www.inkwell.software/tools/screenplay-length",
+    "description": "Estimate page count and running time"
+  },
+  {
+    "id": "outline_extractor",
+    "section": "Use a free writing tool",
+    "title": "Outline extractor",
+    "url": "https://www.inkwell.software/tools/screenplay-outline-extractor",
+    "description": "Pull a scene outline out of a Fountain draft"
+  },
+  {
+    "id": "title_page_builder",
+    "section": "Use a free writing tool",
+    "title": "Title page builder",
+    "url": "https://www.inkwell.software/tools/screenplay-title-page-builder",
+    "description": "Format a screenplay title page"
+  },
+  {
+    "id": "beat_sheet_calculator",
+    "section": "Use a free writing tool",
+    "title": "Beat sheet calculator",
+    "url": "https://www.inkwell.software/tools/beat-sheet-calculator",
+    "description": "Place story beats for your page count"
+  },
+  {
+    "id": "table_read_planner",
+    "section": "Use a free writing tool",
+    "title": "Table read planner",
+    "url": "https://www.inkwell.software/tools/table-read-planner",
+    "description": "Time a table read and plan the cast"
+  },
+  {
+    "id": "rehearsal_sides",
+    "section": "Use a free writing tool",
+    "title": "Rehearsal sides builder",
+    "url": "https://www.inkwell.software/tools/rehearsal-sides-builder",
+    "description": "Pull one actor’s scenes into rehearsal sides"
+  },
+  {
+    "id": "character_profile_tool",
+    "section": "Use a free writing tool",
+    "title": "Character profile builder",
+    "url": "https://www.inkwell.software/tools/character-profile",
+    "description": "Build a character profile scene by scene"
+  },
+  {
+    "id": "character_names",
+    "section": "Use a free writing tool",
+    "title": "Period character names",
+    "url": "https://www.inkwell.software/tools/character-names",
+    "description": "Find names that fit a decade and place"
+  },
+  {
+    "id": "writing_goal_planner",
+    "section": "Use a free writing tool",
+    "title": "Writing goal planner",
+    "url": "https://www.inkwell.software/tools/writing-goal-planner",
+    "description": "Turn a deadline into a daily word goal"
+  },
+  {
+    "id": "markdown_to_word",
+    "section": "Use a free writing tool",
+    "title": "Markdown to Word",
+    "url": "https://www.inkwell.software/tools/markdown-to-word",
+    "description": "Convert Markdown to a Word document"
+  },
+  {
+    "id": "wga_minimums",
+    "section": "Use a free writing tool",
+    "title": "WGA minimums",
+    "url": "https://www.inkwell.software/tools/wga-minimums",
+    "description": "Look up current minimum pay for screenwriters"
+  },
+  {
+    "id": "representation_planner",
+    "section": "Use a free writing tool",
+    "title": "Representation planner",
+    "url": "https://www.inkwell.software/tools/representation-planner",
+    "description": "Plan a search for an agent or manager"
+  },
+  {
     "id": "tools",
     "section": "Use a free writing tool",
     "title": "All tools",
     "url": "https://www.inkwell.software/tools",
     "description": "Browse the complete tool catalog"
+  },
+  {
+    "id": "tpl_beat_sheet",
+    "section": "Start from a template",
+    "title": "Beat sheet template",
+    "url": "https://www.inkwell.software/templates/beat-sheet-canvas",
+    "description": "Plan a feature’s turning points"
+  },
+  {
+    "id": "tpl_act_two",
+    "section": "Start from a template",
+    "title": "Act II outline",
+    "url": "https://www.inkwell.software/templates/act-two-outline",
+    "description": "Outline the middle of a feature"
+  },
+  {
+    "id": "tpl_pilot",
+    "section": "Start from a template",
+    "title": "TV pilot template",
+    "url": "https://www.inkwell.software/templates/pilot-fountain",
+    "description": "Start a pilot episode"
+  },
+  {
+    "id": "tpl_short",
+    "section": "Start from a template",
+    "title": "Short film template",
+    "url": "https://www.inkwell.software/templates/short-fountain",
+    "description": "Start a short film script"
+  },
+  {
+    "id": "tpl_series_bible",
+    "section": "Start from a template",
+    "title": "TV series bible",
+    "url": "https://www.inkwell.software/templates/tv-series-bible",
+    "description": "Lay out a show’s world, characters and seasons"
+  },
+  {
+    "id": "tpl_rewrite_plan",
+    "section": "Start from a template",
+    "title": "Screenplay rewrite plan",
+    "url": "https://www.inkwell.software/templates/screenplay-rewrite-plan",
+    "description": "Turn notes into a rewrite plan"
+  },
+  {
+    "id": "tpl_coverage",
+    "section": "Start from a template",
+    "title": "Script coverage template",
+    "url": "https://www.inkwell.software/templates/script-coverage",
+    "description": "Write coverage on a script"
+  },
+  {
+    "id": "tpl_table_read",
+    "section": "Start from a template",
+    "title": "Table read notes",
+    "url": "https://www.inkwell.software/templates/writers-room-read",
+    "description": "Capture notes from a read-through"
+  },
+  {
+    "id": "tpl_google_docs",
+    "section": "Start from a template",
+    "title": "Screenplay template for Google Docs and Word",
+    "url": "https://www.inkwell.software/templates/screenplay-google-docs-word",
+    "description": "Format a script in a word processor"
+  },
+  {
+    "id": "tpl_novel_outline",
+    "section": "Start from a template",
+    "title": "Novel outline",
+    "url": "https://www.inkwell.software/templates/novel-outline",
+    "description": "Outline a novel chapter by chapter"
+  },
+  {
+    "id": "learn_screenplay",
+    "section": "Learn the craft",
+    "title": "How to write a screenplay",
+    "url": "https://www.inkwell.software/learn/how-to-write-a-screenplay",
+    "description": "Go from idea to finished draft"
+  },
+  {
+    "id": "learn_tv_writer",
+    "section": "Learn the craft",
+    "title": "How to become a TV writer",
+    "url": "https://www.inkwell.software/learn/how-to-become-a-tv-writer",
+    "description": "Understand the path into a writers’ room"
+  },
+  {
+    "id": "learn_play",
+    "section": "Learn the craft",
+    "title": "How to write a play",
+    "url": "https://www.inkwell.software/learn/how-to-write-a-play",
+    "description": "Write for the stage"
+  },
+  {
+    "id": "learn_short_story",
+    "section": "Learn the craft",
+    "title": "How to write a short story",
+    "url": "https://www.inkwell.software/learn/how-to-write-a-short-story",
+    "description": "Shape a complete short story"
+  },
+  {
+    "id": "formatting",
+    "section": "Learn the craft",
+    "title": "Screenplay formatting",
+    "url": "https://www.inkwell.software/resources/screenplay-formatting",
+    "description": "Format montages, intercuts, texts and more"
+  },
+  {
+    "id": "learn_breakdowns",
+    "section": "Learn the craft",
+    "title": "How to break down a screenplay",
+    "url": "https://www.inkwell.software/learn/script-breakdowns",
+    "description": "Prepare a script for production"
+  },
+  {
+    "id": "learn_fdx_handoff",
+    "section": "Learn the craft",
+    "title": "FDX handoff",
+    "url": "https://www.inkwell.software/learn/fdx-handoff",
+    "description": "Deliver production-ready pages"
+  },
+  {
+    "id": "learn_version_control",
+    "section": "Learn the craft",
+    "title": "Version control for screenwriters",
+    "url": "https://www.inkwell.software/learn/version-control-for-screenwriters",
+    "description": "Keep every draft without a folder of copies"
+  },
+  {
+    "id": "submissions",
+    "section": "Learn the craft",
+    "title": "Screenwriting competitions and labs",
+    "url": "https://www.inkwell.software/resources/submissions",
+    "description": "Choose where to send a script"
+  },
+  {
+    "id": "skills",
+    "section": "Run an AI pass",
+    "title": "AI writing skills",
+    "url": "https://www.inkwell.software/skills",
+    "description": "Browse focused revision passes"
+  },
+  {
+    "id": "skill_dialogue",
+    "section": "Run an AI pass",
+    "title": "Dialogue pass",
+    "url": "https://www.inkwell.software/skills/dialogue-pass",
+    "description": "Tighten and sharpen dialogue"
+  },
+  {
+    "id": "skill_continuity",
+    "section": "Run an AI pass",
+    "title": "Continuity check",
+    "url": "https://www.inkwell.software/skills/continuity-check",
+    "description": "Catch contradictions across a draft"
+  },
+  {
+    "id": "skill_coverage",
+    "section": "Run an AI pass",
+    "title": "Script coverage",
+    "url": "https://www.inkwell.software/skills/coverage",
+    "description": "Get reader-style coverage on a draft"
+  },
+  {
+    "id": "skill_pacing",
+    "section": "Run an AI pass",
+    "title": "Pacing analysis",
+    "url": "https://www.inkwell.software/skills/pacing-analysis",
+    "description": "Find slow and rushed stretches"
+  },
+  {
+    "id": "skill_subtext",
+    "section": "Run an AI pass",
+    "title": "Subtext check",
+    "url": "https://www.inkwell.software/skills/subtext-check",
+    "description": "Find lines that say too much"
+  },
+  {
+    "id": "byok",
+    "section": "Run an AI pass",
+    "title": "Connect your AI provider",
+    "url": "https://www.inkwell.software/resources/guides/byok-setup",
+    "description": "Use your own model key"
+  },
+  {
+    "id": "from_final_draft",
+    "section": "Switch from another app",
+    "title": "From Final Draft",
+    "url": "https://www.inkwell.software/resources/migrate/from-final-draft",
+    "description": "Bring your FDX scripts across"
+  },
+  {
+    "id": "from_writerduet",
+    "section": "Switch from another app",
+    "title": "From WriterDuet",
+    "url": "https://www.inkwell.software/resources/migrate/from-writerduet",
+    "description": "Move scripts and collaborators"
+  },
+  {
+    "id": "from_celtx",
+    "section": "Switch from another app",
+    "title": "From Celtx",
+    "url": "https://www.inkwell.software/resources/migrate/from-celtx",
+    "description": "Move scripts out of Celtx"
+  },
+  {
+    "id": "from_fade_in",
+    "section": "Switch from another app",
+    "title": "From Fade In",
+    "url": "https://www.inkwell.software/resources/migrate/from-fade-in",
+    "description": "Move Fade In scripts"
+  },
+  {
+    "id": "from_arc_studio",
+    "section": "Switch from another app",
+    "title": "From Arc Studio Pro",
+    "url": "https://www.inkwell.software/resources/migrate/from-arc-studio-pro",
+    "description": "Move Arc Studio Pro scripts"
+  },
+  {
+    "id": "from_highland",
+    "section": "Switch from another app",
+    "title": "From Highland",
+    "url": "https://www.inkwell.software/resources/migrate/from-highland",
+    "description": "Move Highland drafts"
+  },
+  {
+    "id": "from_slugline",
+    "section": "Switch from another app",
+    "title": "From Slugline",
+    "url": "https://www.inkwell.software/resources/migrate/from-slugline",
+    "description": "Move Slugline drafts"
   },
   {
     "id": "resources",
@@ -196,6 +532,69 @@
     "description": "Explore the measurements and their methods"
   },
   {
+    "id": "term_fountain",
+    "section": "Look up a term",
+    "title": "Fountain",
+    "url": "https://www.inkwell.software/glossary/fountain",
+    "description": "The plain-text screenplay format"
+  },
+  {
+    "id": "term_fdx",
+    "section": "Look up a term",
+    "title": "FDX",
+    "url": "https://www.inkwell.software/glossary/fdx",
+    "description": "Final Draft’s file format"
+  },
+  {
+    "id": "term_revision_colors",
+    "section": "Look up a term",
+    "title": "Revision colors",
+    "url": "https://www.inkwell.software/glossary/revision-colors",
+    "description": "The order of colored revision pages"
+  },
+  {
+    "id": "term_a_pages",
+    "section": "Look up a term",
+    "title": "A-pages",
+    "url": "https://www.inkwell.software/glossary/a-pages",
+    "description": "Pages added after a script is locked"
+  },
+  {
+    "id": "term_locked_script",
+    "section": "Look up a term",
+    "title": "Locked script",
+    "url": "https://www.inkwell.software/glossary/locked-script",
+    "description": "What locking pages means"
+  },
+  {
+    "id": "term_shooting_script",
+    "section": "Look up a term",
+    "title": "Shooting script",
+    "url": "https://www.inkwell.software/glossary/shooting-script",
+    "description": "The production version of a script"
+  },
+  {
+    "id": "term_spec_script",
+    "section": "Look up a term",
+    "title": "Spec script",
+    "url": "https://www.inkwell.software/glossary/spec-script",
+    "description": "A script written on speculation"
+  },
+  {
+    "id": "term_logline",
+    "section": "Look up a term",
+    "title": "Logline",
+    "url": "https://www.inkwell.software/glossary/logline",
+    "description": "A one-sentence story pitch"
+  },
+  {
+    "id": "term_treatment",
+    "section": "Look up a term",
+    "title": "Treatment",
+    "url": "https://www.inkwell.software/glossary/treatment",
+    "description": "A prose summary of a story"
+  },
+  {
     "id": "help",
     "section": "Get help and follow the product",
     "title": "Help center",
@@ -240,35 +639,35 @@
   {
     "id": "de",
     "section": "Read in your language",
-    "title": "Resources — Deutsch",
+    "title": "Deutsch",
     "url": "https://www.inkwell.software/de/resources",
     "description": "Published localized resource hub"
   },
   {
     "id": "es",
     "section": "Read in your language",
-    "title": "Resources — Español",
+    "title": "Español",
     "url": "https://www.inkwell.software/es/resources",
     "description": "Published localized resource hub"
   },
   {
     "id": "fr",
     "section": "Read in your language",
-    "title": "Resources — Français",
+    "title": "Français",
     "url": "https://www.inkwell.software/fr/resources",
     "description": "Published localized resource hub"
   },
   {
     "id": "ja",
     "section": "Read in your language",
-    "title": "Resources — 日本語",
+    "title": "日本語",
     "url": "https://www.inkwell.software/ja/resources",
     "description": "Published localized resource hub"
   },
   {
     "id": "ko",
     "section": "Read in your language",
-    "title": "Resources — 한국어",
+    "title": "한국어",
     "url": "https://www.inkwell.software/ko/resources",
     "description": "Published localized resource hub"
   }

@@ -1,6 +1,6 @@
 # Inkwell Writing Handbook
 
-![Inkwell Writing Handbook — make the next draft clearer](assets/social-preview.svg)
+![Inkwell Writing Handbook: make the next draft clearer. Four workflows, from planning a draft to preparing a handoff, beside the outline, revision-log and handoff-manifest templates.](assets/social-preview.png)
 
 **Plan a draft, review a revision, and prepare a clean handoff.** Practical workflows and reusable templates for screenwriters, novelists, researchers, and teams working on structured documents.
 

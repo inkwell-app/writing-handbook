@@ -22,10 +22,10 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "yaml": "2.8.2",
+    "yaml": "2.9.1",
     "entities": "8.1.0",
-    "@types/node": "22.10.2",
-    "typescript": "5.9.3",
+    "@types/node": "22.20.5",
+    "typescript": "7.0.2",
     "marked": "18.1.2",
     "github-slugger": "2.0.0"
   }

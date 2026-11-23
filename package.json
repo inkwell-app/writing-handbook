@@ -26,7 +26,7 @@
     "entities": "8.1.0",
     "@types/node": "22.20.5",
     "typescript": "7.0.2",
-    "marked": "18.1.2",
+    "marked": "18.2.1",
     "github-slugger": "2.0.0"
   }
 }

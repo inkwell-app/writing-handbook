@@ -518,6 +518,20 @@
     "description": "Explore screenplay structure"
   },
   {
+    "id": "length",
+    "section": "Learn and explore",
+    "title": "How long a screenplay should be",
+    "url": "https://www.inkwell.software/resources/screenplay-length",
+    "description": "Check a draft’s length against 2,077 scripts"
+  },
+  {
+    "id": "pacing",
+    "section": "Learn and explore",
+    "title": "Screenplay pacing",
+    "url": "https://www.inkwell.software/resources/screenplay-pacing",
+    "description": "See where a draft speeds up and slows down"
+  },
+  {
     "id": "scene_order",
     "section": "Learn and explore",
     "title": "Scene Order Lab",
